@@ -9,7 +9,6 @@ import Home from "./assets/components/pages/Home";
 import Contact from "./assets/components/pages/Contect";
 import Login from "./assets/components/pages/Login";
 import Signup from "./assets/components/pages/Signup";
-import Products from "./assets/components/pages/Products";
 import ProductDetails from "./assets/components/pages/ProductDetails";
 import Navbar from "./assets/components/pages/Navbar";
 import Footer from "./assets/components/Footer";
@@ -92,8 +91,8 @@ function App() {
                     }
                   />
                   <Route
-                    path="/product/:id" // Changed to dynamic route
-                    element={<ProductDetails />} // Removed ProductProvider here
+                    path="/product/:id" 
+                    element={<ProductDetails />} 
                   />
                   <Route
                     path="/about"

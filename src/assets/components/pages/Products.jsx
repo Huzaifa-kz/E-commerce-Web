@@ -64,6 +64,7 @@ function Products() {
 
   const handleViewAll = () => {
     navigate("/products/viewall");
+    console.log(setViewAll);
   };
 
   const handleAddToCart = (product) => {
@@ -88,6 +89,7 @@ function Products() {
           onClick={handleViewAll}
         >
           {viewAll ? "Show Less" : "View All"}
+          
         </button>
       </div>
       {loading ? (
